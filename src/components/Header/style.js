@@ -4,27 +4,29 @@ import breakpoint from '../../styles/breakpoints'
 export const HeaderComp = styled.header`
   height: 4.2rem;
   width: 100%;
-  background-color: #050505;
+  background-color: var(--black1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   z-index: 1000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   @media ${breakpoint.sm1} {
     height: 3.8rem;
   }
 `
 
-export const ContainerElements = styled.ul`
-  /* Use 'ul' instead of 'li' */
+export const ContainerElements = styled.li`
   display: flex;
   align-items: center;
   gap: 0.8rem;
   padding: 20px 30px 20px 60px;
+  &.active > a {
+    color: var(--whiteDefault);
+  }
+  &.disabled > a {
+    color: var(--whiteDefault);
+    pointer-events: none;
+  }
   @media ${breakpoint.bg1} {
     gap: 2rem;
     padding: 20px 30px 20px 20px;
@@ -35,9 +37,9 @@ export const Element = styled.a`
   text-align: center;
   text-decoration: none;
   padding: 8px 16px;
-  color: var(--gray0);
+  color: var(--greyDefault);
   cursor: pointer;
-  transition: color 0.5s ease;
+  transition: all ease 0.5s;
   font-size: 14px;
   &:hover {
     color: var(--whiteDefault);
@@ -84,9 +86,11 @@ export const DropdownMenu = styled.div`
   position: absolute;
   top: 90%;
   flex-direction: column;
+  border: none;
   border-radius: 8px;
-  background-color: var(--gray1);
-  border: 1px solid var(--gray3);
+  background-color: var(--grey1);
+  border: 1px solid var(--grey2);
+
   ${Dropdown}:hover & {
     display: flex;
   }
@@ -105,11 +109,12 @@ export const DropdownItem = styled.a`
   margin: 2px 4px;
   color: var(--whiteDefault);
   text-decoration: none;
-  transition: background-color 0.4s ease, color 0.4s ease;
+  transition: all 0.4s;
   font-size: 14px;
+
   &:hover {
-    background-color: #303030;
-    color: #fff;
+    background-color: var(--grey2);
+    color: var(--whiteDefault);
   }
   @media ${breakpoint.bg1} {
     font-size: 11px;
@@ -120,10 +125,11 @@ export const DropdownItem = styled.a`
 export const Button = styled.a`
   display: flex;
   align-items: center;
-  transition: color 0.5s ease;
-  color: var(--gray2);
+  transition: all ease 0.5s;
+  color: var(--greyDefault);
   cursor: pointer;
   font-size: 14px;
+
   svg {
     margin-right: 10px;
     font-size: 14px;
@@ -134,15 +140,16 @@ export const Button = styled.a`
       color: var(--whiteDefault);
     }
   }
+
   @media ${breakpoint.bg1} {
     font-size: 13px;
     padding: 4px 8px;
   }
+
   @media ${breakpoint.sm2} {
     display: none;
   }
 `
-
 export const BtnMenu = styled.button`
   display: none;
 
@@ -156,7 +163,7 @@ export const BtnMenu = styled.button`
 
     svg {
       transition: color 0.3s ease;
-      color: var(--gray2);
+      color: var(--grey4);
       font-size: 22px;
     }
 
