@@ -6,7 +6,7 @@ export const FormInputContainer = styled.div`
   flex-direction: column;
   margin: 0 0 2px 0;
   align-items: start;
-  transition: 0.3s;
+  transition: var(--transition-default-fast);
 `
 
 export const Label = styled.label`

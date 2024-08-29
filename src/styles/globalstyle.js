@@ -36,6 +36,13 @@ const GlobalStyled = createGlobalStyle`
         --black1: #080808;
 
         --erro: #CD2B31;
+
+        --transition-default-fast: 0,3;
+        --transition-color-fast: color 0.3s ease;
+        --transition-color-slow: color 0.5s ease;
+        --transition-all-ease-fast: all ease 0.3s;
+        --transition-all-ease-slow: all ease 0.5s;
+        --transition-all-medium: all 0.4;
     }
 `
 
