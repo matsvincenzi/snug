@@ -48,7 +48,7 @@ export const MainLink = styled.a`
   text-decoration: none;
   font-size: 14px;
   padding: 4px;
-  transition: color 0.5s ease;
+  transition: var(--transition-color-slow);
   &:hover {
     color: var(--whiteDefault);
     text-decoration: underline;
@@ -67,7 +67,7 @@ export const SocialIcons = styled.div`
 export const SocialIcon = styled.a`
   color: var(--whiteDefault);
   font-size: 24px;
-  transition: color 0.3s ease;
+  transition: var(--transition-color-fast);
 
   &:hover {
     color: var(--grey2);

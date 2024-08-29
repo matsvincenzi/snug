@@ -39,7 +39,7 @@ export const Element = styled.a`
   padding: 8px 16px;
   color: var(--greyDefault);
   cursor: pointer;
-  transition: all ease 0.5s;
+  transition: var(--transition-all-ease-slow);
   font-size: 14px;
   &:hover {
     color: var(--whiteDefault);
@@ -109,7 +109,7 @@ export const DropdownItem = styled.a`
   margin: 2px 4px;
   color: var(--whiteDefault);
   text-decoration: none;
-  transition: all 0.4s;
+  transition: var(--transition-all-medium);
   font-size: 14px;
 
   &:hover {
@@ -125,7 +125,7 @@ export const DropdownItem = styled.a`
 export const Button = styled.a`
   display: flex;
   align-items: center;
-  transition: all ease 0.5s;
+  transition: var(--transition-all-ease-slow);
   color: var(--greyDefault);
   cursor: pointer;
   font-size: 14px;
@@ -162,7 +162,7 @@ export const BtnMenu = styled.button`
     cursor: pointer;
 
     svg {
-      transition: color 0.3s ease;
+      transition: var(--transition-color-fast);
       color: var(--grey4);
       font-size: 22px;
     }
