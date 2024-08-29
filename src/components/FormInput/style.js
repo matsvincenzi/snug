@@ -39,7 +39,7 @@ export const Input = styled.input`
     outline: none;
     border-color: var(--grey6);
     color: var(--greyDefault);
-    transition: var(--transition-color-slow), var(--transition-border-slow);
+    transition: var(--transition-color-slow), var(--transition-bg-shadow);
   }
 
   @media ${breakpoint.md1} {

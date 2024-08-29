@@ -43,6 +43,7 @@ const GlobalStyled = createGlobalStyle`
         --transition-all-ease-fast: all ease 0.3s;
         --transition-all-ease-slow: all ease 0.5s;
         --transition-all-medium: all 0.4;
+        --transition-bg-shadow: background-color 0.5s ease, box-shadow 0.3s ease;
     }
 `
 
