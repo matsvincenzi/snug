@@ -14,6 +14,25 @@ const GlobalStyled = createGlobalStyle`
     button {
         cursor: pointer;
     }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--grey1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--blackDefault);
+        border-radius: 10px;
+        border: 2px solid var(--grey2);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--grey3);
+    }
+    
     
     :root {
 
