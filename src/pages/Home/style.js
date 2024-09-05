@@ -19,6 +19,9 @@ export const MainContent = styled.main`
     padding: 1rem;
   }
 `
+
+//
+
 export const WelcomeSection = styled.section`
   display: flex;
   justify-content: center;
@@ -74,5 +77,46 @@ export const Buttons = styled.button`
 
   &:hover {
     background-color: var(--grey2);
+  }
+`
+
+//
+
+export const ContactSection = styled.div`
+  display: flex;
+  align-items: center;
+  height: 25rem;
+`
+
+export const ContactContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+`
+
+export const ContactBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 400px;
+`
+
+export const IconContact = styled.div`
+  margin-bottom: 24px;
+
+  svg {
+    font-size: 48px;
+  }
+`
+export const ContactLink = styled.a`
+  font-size: 16px;
+  text-decoration: underline;
+  margin-top: 24px;
+  color: var(--greyDefault);
+  transition: var(--transition-all-ease-fast);
+
+  &:hover {
+    color: var(--whiteDefault);
   }
 `
