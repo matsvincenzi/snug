@@ -120,3 +120,88 @@ export const ContactLink = styled.a`
     color: var(--whiteDefault);
   }
 `
+
+//
+
+export const TechSection = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0; //
+`
+
+export const TechContainer = styled.div`
+  text-align: center;
+  width: 100%;
+`
+
+export const IconsGrid = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+`
+export const IconItem = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--greyDefault);
+  transition: color 0.3s ease-in-out;
+
+  svg {
+    font-size: 48px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &:nth-child(1) {
+    animation: icon-sequence 12s infinite;
+  }
+  &:nth-child(2) {
+    animation: icon-sequence 12s infinite 1.33s;
+  }
+  &:nth-child(3) {
+    animation: icon-sequence 12s infinite 2.67s;
+  }
+  &:nth-child(4) {
+    animation: icon-sequence 12s infinite 4s;
+  }
+  &:nth-child(5) {
+    animation: icon-sequence 12s infinite 5.33s;
+  }
+  &:nth-child(6) {
+    animation: icon-sequence 12s infinite 6.67s;
+  }
+  &:nth-child(7) {
+    animation: icon-sequence 12s infinite 8s;
+  }
+  &:nth-child(8) {
+    animation: icon-sequence 12s infinite 9.33s;
+  }
+  &:nth-child(9) {
+    animation: icon-sequence 12s infinite 10.67s;
+  }
+
+  @keyframes icon-sequence {
+    0%,
+    20%,
+    100% {
+      color: var(--greyDefault);
+      transform: scale(1);
+    }
+    10% {
+      color: var(--whiteDefault);
+      transform: scale(1.2);
+    }
+    30% {
+      color: var(--greyDefault);
+      transform: scale(1);
+    }
+  }
+`
+
+export const IconLabel = styled.span`
+  font-size: 16px;
+`
