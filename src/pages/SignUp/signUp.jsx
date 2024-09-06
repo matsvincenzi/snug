@@ -1,10 +1,15 @@
 import { Header } from '../../components/Header/header'
+import { Footer } from '../../components/Footer/footer'
+
 import logo from '../../assets/images/snug.png'
 import FormInput from '../../components/FormInput/formInput'
+import MediumTitle from '../../components/Title/MediumTitle/mediumTitle'
+import SmallSubTitle from '../../components/SubTitle/SmallSubTitle/smallSubTitle'
+
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useForm } from 'react-hook-form'
 import formValidation from './validation'
-import { Footer } from '../../components/Footer/footer'
+
 import {
   PageContainer,
   Container,
@@ -12,8 +17,6 @@ import {
   LogoBox,
   Logo,
   FormBox,
-  Title,
-  SubTitle,
   ButtonSubmit,
   GoogleLogin,
   AlternativeJoin,
@@ -47,8 +50,12 @@ export default function SignUp() {
               <Logo src={logo} alt="logo" />
             </LogoBox>
             <FormBox>
-              <Title>Make your registration</Title>
-              <SubTitle>Make this the best place for your money!</SubTitle>
+              <MediumTitle color="var(--whiteDefault)">
+                Make your registration
+              </MediumTitle>
+              <SmallSubTitle margin="0 0 30px 0">
+                Make this the best place for your money!
+              </SmallSubTitle>
               <form onSubmit={handleSubmit(onSubmit)}>
                 <FormInput
                   type="text"

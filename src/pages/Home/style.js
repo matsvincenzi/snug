@@ -35,28 +35,10 @@ export const WelcomeContainer = styled.div`
   width: 100%;
 `
 
-export const TitleContainer = styled.div`
-  justify-content: flex-start;
-  line-height: 3.5rem;
-`
-
-export const Title = styled.h1`
-  font-size: 56px;
-  padding-bottom: 20px;
-  text-align: left;
-  color: var(--greyDefault);
-`
-
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-`
-
-export const TitleDescription = styled.div`
-  max-width: 600px;
-  text-align: left;
-  line-height: 1.6;
 `
 
 export const ContainerButtons = styled.div`

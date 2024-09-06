@@ -1,6 +1,11 @@
 import { Header } from '../../components/Header/header'
 import { Footer } from '../../components/Footer/footer'
 
+import SmallTitle from '../../components/Title/SmallTitle/smallTitle'
+import BigTitle from '../../components/Title/BigTitle/bigTitle'
+import SmallSubTitle from '../../components/SubTitle/SmallSubTitle/smallSubTitle'
+import MediumSubTitle from '../../components/SubTitle/MediumSubTitle/mediumSubTitle'
+
 import {
   FaReact,
   FaJs,
@@ -16,19 +21,12 @@ import { SiSpring } from 'react-icons/si'
 
 import { MdEmail, MdChat, MdPhone } from 'react-icons/md'
 
-import SmallTitle from '../../components/Title/SmallTitle/smallTitle'
-import SmallSubTitle from '../../components/SubTitle/SmallSubTitle/smallSubTitle'
-import MediumSubTitle from '../../components/SubTitle/MediumSubTitle/mediumSubTitle'
-
 import {
   PageContainer,
   MainContent,
   WelcomeSection,
   WelcomeContainer,
-  TitleContainer,
-  Title,
   InfoContainer,
-  TitleDescription,
   ContainerButtons,
   Buttons,
   ContactSection,
@@ -52,16 +50,14 @@ const Home = () => {
         <MainContent>
           <WelcomeSection>
             <WelcomeContainer>
-              <TitleContainer>
-                <Title>Welcome To Snug</Title>
-              </TitleContainer>
+              <BigTitle>Welcome To Snug</BigTitle>
               <InfoContainer>
-                <TitleDescription>
+                <SmallSubTitle maxWidth="600px">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                   do eiusmod tempor incididunt ut labore et dolore magna
                   aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Sed do eiusmo.
-                </TitleDescription>
+                </SmallSubTitle>
                 <ContainerButtons>
                   <Buttons>Lorem Ipsum</Buttons>
                   <Buttons>Lorem Ipsum</Buttons>
