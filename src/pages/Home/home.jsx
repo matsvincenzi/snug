@@ -1,7 +1,10 @@
 import { Header } from '../../components/Header/header'
+import { Carousel } from './components/Carousel/carousel'
 import { Footer } from '../../components/Footer/footer'
 
+import defaultImg from '../../assets/images/grey.png'
 import SmallTitle from '../../components/Title/SmallTitle/smallTitle'
+import MediumTitle from '../../components/Title/MediumTitle/mediumTitle'
 import BigTitle from '../../components/Title/BigTitle/bigTitle'
 import SmallSubTitle from '../../components/SubTitle/SmallSubTitle/smallSubTitle'
 import MediumSubTitle from '../../components/SubTitle/MediumSubTitle/mediumSubTitle'
@@ -29,16 +32,19 @@ import {
   InfoContainer,
   ContainerButtons,
   Buttons,
-  ContactSection,
-  ContactContainer,
-  ContactBox,
-  IconContact,
-  ContactLink,
   TechSection,
   TechContainer,
   IconsGrid,
   IconItem,
   IconLabel,
+  ContentSection,
+  ContentImg,
+  ContentContainer,
+  ContactSection,
+  ContactContainer,
+  ContactBox,
+  IconContact,
+  ContactLink,
 } from './style'
 
 const Home = () => {
@@ -48,6 +54,7 @@ const Home = () => {
         <Header />
 
         <MainContent>
+          <Carousel />
           <WelcomeSection>
             <WelcomeContainer>
               <BigTitle>Welcome To Snug</BigTitle>
@@ -112,6 +119,23 @@ const Home = () => {
               </IconsGrid>
             </TechContainer>
           </TechSection>
+
+          <ContentSection>
+            <ContentContainer>
+              <MediumTitle>
+                Lorem ipsum dolor sit amet, consectetur adipiscing.
+              </MediumTitle>
+              <MediumSubTitle>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique.
+              </MediumSubTitle>
+              <ContainerButtons>
+                <Buttons>Lorem Ipsum</Buttons>
+                <Buttons>Lorem Ipsum</Buttons>
+              </ContainerButtons>
+            </ContentContainer>
+            <ContentImg src={defaultImg} alt="grey demo image" />
+          </ContentSection>
 
           <ContactSection>
             <ContactContainer>
