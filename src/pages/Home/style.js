@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import breakpoint from '../../styles/breakpoints'
 
 export const PageContainer = styled.div`
   display: flex;
@@ -7,7 +8,7 @@ export const PageContainer = styled.div`
   background-color: var(--black1);
 `
 export const MainContent = styled.main`
-  padding-top: 3rem;
+  padding-top: 48px;
   flex: 1;
   text-align: center;
   color: var(--greyDefault);
@@ -16,10 +17,9 @@ export const MainContent = styled.main`
 
   section {
     margin: 0 auto;
-    padding: 1rem;
+    padding: 16px;
   }
 `
-
 //
 
 export const WelcomeSection = styled.section`
@@ -59,47 +59,6 @@ export const Buttons = styled.button`
 
   &:hover {
     background-color: var(--grey2);
-  }
-`
-
-//
-
-export const ContactSection = styled.div`
-  display: flex;
-  align-items: center;
-  height: 25rem;
-`
-
-export const ContactContainer = styled.div`
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-`
-
-export const ContactBox = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  max-width: 400px;
-`
-
-export const IconContact = styled.div`
-  margin-bottom: 24px;
-
-  svg {
-    font-size: 48px;
-  }
-`
-export const ContactLink = styled.a`
-  font-size: 16px;
-  text-decoration: underline;
-  margin-top: 24px;
-  color: var(--greyDefault);
-  transition: var(--transition-all-ease-fast);
-
-  &:hover {
-    color: var(--whiteDefault);
   }
 `
 
@@ -187,3 +146,71 @@ export const IconItem = styled.div`
 export const IconLabel = styled.span`
   font-size: 16px;
 `
+
+//
+
+export const ContentSection = styled.div`
+  display: flex;
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 48px;
+`
+
+export const ContentImg = styled.img`
+  height: 380px;
+  width: 1000px;
+  padding: 16px 20px;
+  margin-right: 5rem;
+`
+
+export const ContentContainer = styled.div`
+  margin-left: 5rem;
+
+  display: flex;
+  flex-direction: column;
+`
+
+//
+
+export const ContactSection = styled.div`
+  display: flex;
+  align-items: center;
+  height: 25rem;
+`
+
+export const ContactContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+`
+
+export const ContactBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 400px;
+`
+
+export const IconContact = styled.div`
+  margin-bottom: 24px;
+
+  svg {
+    font-size: 48px;
+  }
+`
+export const ContactLink = styled.a`
+  font-size: 16px;
+  text-decoration: underline;
+  margin-top: 24px;
+  color: var(--greyDefault);
+  transition: var(--transition-all-ease-fast);
+
+  &:hover {
+    color: var(--whiteDefault);
+  }
+`
+
+//
