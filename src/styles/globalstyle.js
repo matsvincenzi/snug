@@ -5,10 +5,10 @@ const GlobalStyled = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Poppins', 'Arial', sans-serif;
     }
 
     body {
-        font-family: 'Poppins', 'Arial', sans-serif;
     }
 
     button {
@@ -50,6 +50,7 @@ const GlobalStyled = createGlobalStyle`
 
         --whiteDefault: #FFFFFF;
         --white1: #E8E8E8;
+        --white2: #F9F9F9;
 
         --blackDefault: #000000;
         --black1: #080808;

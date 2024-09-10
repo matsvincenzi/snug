@@ -30,7 +30,6 @@ export const StyledSwiperSlide = styled(SwiperSlide)`
 
   h2 {
     color: var(--whiteDefault);
-    /* font-weight: 100; */
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 0.625rem;
