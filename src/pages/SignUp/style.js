@@ -15,6 +15,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `
+
 export const ModalBox = styled.div`
   height: 42rem;
   width: 70rem;
@@ -84,46 +85,6 @@ export const Logo = styled.img`
   }
   @media ${breakpoint.sm1} {
     display: none;
-  }
-`
-
-export const Title = styled.h1`
-  font-size: 35px;
-  color: var(--whiteDefault);
-  margin: 1.5px 0;
-  font-weight: 600;
-  text-align: center;
-  transition: var(--transition-color-slow);
-
-  @media ${breakpoint.md1} {
-    font-size: 1.8rem;
-    margin: 4px 0;
-  }
-  @media ${breakpoint.sm2} {
-    font-size: 1.5rem;
-    margin: 2px 0;
-  }
-  @media ${breakpoint.sm1} {
-    font-size: 1.3rem;
-    margin: 0.5px;
-  }
-`
-
-export const SubTitle = styled.text`
-  font-size: 12px;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  color: var(--greyDefault);
-
-  @media ${breakpoint.md1} {
-    font-size: 12px;
-    margin-bottom: 1rem;
-  }
-  @media ${breakpoint.sm2} {
-    font-size: 10px;
-  }
-  @media ${breakpoint.sm1} {
-    font-size: 9px;
   }
 `
 
