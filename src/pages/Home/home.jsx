@@ -1,5 +1,6 @@
 import { Header } from '../../components/Header/header'
 import { Carousel } from './components/Carousel/carousel'
+import { ButtonGroup } from './components/Buttons/buttons'
 import { Footer } from '../../components/Footer/footer'
 
 import defaultImg from '../../assets/images/grey.png'
@@ -30,8 +31,6 @@ import {
   WelcomeSection,
   WelcomeContainer,
   InfoContainer,
-  ContainerButtons,
-  Buttons,
   TechSection,
   TechContainer,
   IconsGrid,
@@ -65,10 +64,7 @@ const Home = () => {
                   aliquaLorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Sed do eiusmo.
                 </SmallSubTitle>
-                <ContainerButtons>
-                  <Buttons>Lorem Ipsum</Buttons>
-                  <Buttons>Lorem Ipsum</Buttons>
-                </ContainerButtons>
+                <ButtonGroup></ButtonGroup>
               </InfoContainer>
             </WelcomeContainer>
           </WelcomeSection>
@@ -129,10 +125,7 @@ const Home = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique.
               </MediumSubTitle>
-              <ContainerButtons>
-                <Buttons>Lorem Ipsum</Buttons>
-                <Buttons>Lorem Ipsum</Buttons>
-              </ContainerButtons>
+              <ButtonGroup></ButtonGroup>
             </ContentContainer>
             <ContentImg src={defaultImg} alt="grey demo image" />
           </ContentSection>
