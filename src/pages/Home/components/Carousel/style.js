@@ -1,20 +1,22 @@
 import styled from 'styled-components'
 import { SwiperSlide, Swiper } from 'swiper/react'
+import breakpoint from '../../../../styles/breakpoints'
 
 export const PageCarousel = styled.section`
-  position: relative;
   display: flex;
   align-items: center;
-  gap: 50px;
   padding: 0 5vw;
   color: var(--white2);
-  height: 30rem;
 `
 
 export const SwiperContainer = styled(Swiper)`
   width: 100%;
   max-width: 800px;
   height: 440px;
+
+  @media ${breakpoint.sm1} {
+    height: 270px;
+  }
 `
 
 export const StyledSwiperSlide = styled(SwiperSlide)`
@@ -70,7 +72,6 @@ export const StyledSwiperSlide = styled(SwiperSlide)`
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
-    /* background-color: var(--grey4); /// */
   }
 
   &.swiper-slide-active div {
