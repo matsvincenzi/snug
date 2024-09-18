@@ -8,7 +8,6 @@ export default function RoutesMainApp() {
       <Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="register" element={<Signup />} />
-        {/* <Route path="login" element={<Signin />} /> */}
       </Route>
     </Routes>
   )
