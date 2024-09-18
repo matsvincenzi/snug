@@ -22,7 +22,7 @@ export const LogoBox = styled.div`
 `
 
 export const Logo = styled.img`
-  max-width: 150px;
+  max-width: 9.5rem;
   height: auto;
 `
 

@@ -23,8 +23,7 @@ export const ModalBox = styled.div`
   background: linear-gradient(to left, rgb(16, 16, 16), rgb(0, 0, 0) 160%);
   box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.196);
   border-radius: 42px;
-  margin-top: 5.5rem;
-  margin-bottom: 5.5rem;
+  margin: 88px 0;
   border: 1px solid var(--grey2);
 
   @media ${breakpoint.md1} {
@@ -34,16 +33,15 @@ export const ModalBox = styled.div`
   @media ${breakpoint.sm2} {
     height: 32rem;
     width: 40rem;
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+    margin: 96px 0;
     border-radius: 28px;
   }
   @media ${breakpoint.sm1} {
-    background: none;
     height: 31rem;
     width: 17rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 48px 0;
+    border-radius: 28px;
+    background: none;
   }
 `
 
@@ -59,7 +57,7 @@ export const FormBox = styled.div`
 
   @media ${breakpoint.sm1} {
     box-shadow: none;
-    padding: 2rem;
+    padding: 32px;
     border-radius: 13px;
   }
 `
@@ -70,8 +68,8 @@ export const LogoBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
 `
 
 export const Logo = styled.img`
@@ -130,8 +128,8 @@ export const ButtonSubmit = styled.button`
   }
   @media ${breakpoint.sm2} {
     font-size: 9px;
+    padding: 9px 19px;
     margin-top: 6px;
-    padding: 10px 18px;
   }
 `
 
@@ -167,19 +165,18 @@ export const AlternativeJoin = styled.p`
   font-size: 12px;
   color: var(--greyDefault);
   font-weight: 400;
-  margin-top: 16px;
-  margin-bottom: 32px;
+  margin: 16px 0 32px;
 
   @media ${breakpoint.md1} {
     font-size: 10px;
   }
+  @media ${breakpoint.sm2} {
+    font-size: 8px;
+    margin: 8px 0;
+  }
   @media ${breakpoint.sm1} {
     font-size: 7px;
-    margin-top: 0.5rem;
-  }
-  @media ${breakpoint.sm2} {
-    margin-top: 0.5rem;
-    font-size: 8px;
+    margin: 8px 0;
   }
 `
 

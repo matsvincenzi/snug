@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import breakpoint from '../../styles/breakpoints'
 
 export const HeaderComp = styled.header`
-  height: 4.2rem;
+  height: 67px;
   width: 100%;
   background-color: var(--black1);
   display: flex;
@@ -10,25 +10,29 @@ export const HeaderComp = styled.header`
   justify-content: space-between;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
   z-index: 1000;
+
   @media ${breakpoint.sm1} {
-    height: 3.8rem;
+    height: 61px;
   }
 `
 
 export const ContainerElements = styled.li`
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 13px;
   padding: 20px 30px 20px 60px;
+
   &.active > a {
     color: var(--whiteDefault);
   }
+
   &.disabled > a {
     color: var(--whiteDefault);
     pointer-events: none;
   }
+
   @media ${breakpoint.bg1} {
-    gap: 2rem;
+    gap: 32px;
     padding: 20px 30px 20px 20px;
   }
 `
@@ -41,13 +45,16 @@ export const Element = styled.a`
   cursor: pointer;
   transition: var(--transition-all-ease-slow);
   font-size: 14px;
+
   &:hover {
     color: var(--whiteDefault);
   }
+
   @media ${breakpoint.bg1} {
     font-size: 13px;
     padding: 4px 8px;
   }
+
   @media ${breakpoint.sm2} {
     display: none;
   }
@@ -94,9 +101,10 @@ export const DropdownMenu = styled.div`
   ${Dropdown}:hover & {
     display: flex;
   }
+
   @media ${breakpoint.bg1} {
-    padding: 0.5rem 0;
-    margin: 0.5rem 0 0;
+    padding: 8px 0;
+    margin: 8px 0 0;
     font-size: 10px;
     top: 70%;
   }
@@ -105,7 +113,7 @@ export const DropdownMenu = styled.div`
 export const DropdownItem = styled.a`
   width: 10rem;
   border-radius: 4px;
-  padding: 0.25rem 1rem;
+  padding: 4px 16px;
   margin: 2px 4px;
   color: var(--whiteDefault);
   text-decoration: none;
@@ -116,6 +124,7 @@ export const DropdownItem = styled.a`
     background-color: var(--grey2);
     color: var(--whiteDefault);
   }
+
   @media ${breakpoint.bg1} {
     font-size: 11px;
     width: 7.5rem;
@@ -134,8 +143,10 @@ export const Button = styled.a`
     margin-right: 10px;
     font-size: 14px;
   }
+
   &:hover {
     color: var(--whiteDefault);
+
     svg {
       color: var(--whiteDefault);
     }
@@ -150,6 +161,7 @@ export const Button = styled.a`
     display: none;
   }
 `
+
 export const BtnMenu = styled.button`
   display: none;
 

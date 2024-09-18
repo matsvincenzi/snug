@@ -11,11 +11,11 @@ export const PageCarousel = styled.section`
 
 export const SwiperContainer = styled(Swiper)`
   width: 100%;
-  max-width: 800px;
-  height: 440px;
+  max-width: 50rem;
+  height: 27.5rem;
 
   @media ${breakpoint.sm1} {
-    height: 270px;
+    height: 17rem;
   }
 `
 
@@ -34,7 +34,7 @@ export const StyledSwiperSlide = styled(SwiperSlide)`
     color: var(--whiteDefault);
     font-size: 20px;
     line-height: 1.4;
-    margin-bottom: 0.625rem;
+    margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
@@ -47,10 +47,10 @@ export const StyledSwiperSlide = styled(SwiperSlide)`
     color: var(--grey4);
     font-weight: 500;
     background: var(--whiteDefault);
-    border-radius: 3.125rem;
+    border-radius: 50px;
     margin: 0 auto;
     padding: 10px 26px;
-    font-size: 0.9rem;
+    font-size: 14px;
     transition: 0.3s ease-in-out;
 
     &:hover {
@@ -66,7 +66,7 @@ export const StyledSwiperSlide = styled(SwiperSlide)`
     transition: 0.25s;
     opacity: 0;
     align-self: stretch;
-    padding-bottom: 70px;
+    padding-bottom: 4.5rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -79,7 +79,7 @@ export const StyledSwiperSlide = styled(SwiperSlide)`
   }
 
   & > div > div {
-    transform: translateY(100px);
+    transform: translateY(6.25rem);
     transition: 0.3s;
   }
 
